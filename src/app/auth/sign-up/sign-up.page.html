@@ -1,9 +1,38 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>signUp</ion-title>
-  </ion-toolbar>
+	
 </ion-header>
 
-<ion-content>
-
+<ion-content class="ion-padding">
+	<form #f="ngForm">
+		<ion-grid>
+			<ion-row>
+				<ion-col>
+					<ion-item lines="none">
+						<h1>Hello!</h1>
+					</ion-item>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col>
+					<ion-item lines="none">
+						<h4>Create an account to continue</h4>
+					</ion-item>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col>
+					<ion-item>
+						<ion-label position="floating">Email</ion-label>
+						<ion-input
+							type="email"
+							ngModel
+							name="email"
+							required
+							email
+						></ion-input>
+					</ion-item>
+				</ion-col>
+			</ion-row>
+		</ion-grid>
+	</form>
 </ion-content>
