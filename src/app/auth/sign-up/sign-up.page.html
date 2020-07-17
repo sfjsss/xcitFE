@@ -22,13 +22,51 @@
 			<ion-row>
 				<ion-col>
 					<ion-item>
-						<ion-label position="floating">Email</ion-label>
+						<ion-label position="floating">Your name</ion-label>
+						<ion-input
+							type="text"
+							ngModel
+							name="name"
+							required
+						></ion-input>
+					</ion-item>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col>
+					<ion-item>
+						<ion-label position="floating">Email address</ion-label>
 						<ion-input
 							type="email"
 							ngModel
 							name="email"
 							required
 							email
+						></ion-input>
+					</ion-item>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col>
+					<ion-item>
+						<ion-label position="floating">Password</ion-label>
+						<ion-input
+							type="password"
+							ngModel
+							name="password"
+							required
+						></ion-input>
+					</ion-item>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col>
+					<ion-item>
+						<ion-label position="floating">Invitation code</ion-label>
+						<ion-input
+							type="text"
+							ngModel
+							name="invitationCode"
 						></ion-input>
 					</ion-item>
 				</ion-col>
