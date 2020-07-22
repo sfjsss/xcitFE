@@ -1,5 +1,4 @@
 <ion-header>
-	
 </ion-header>
 
 <ion-content class="ion-padding">
@@ -7,16 +6,12 @@
 		<ion-grid>
 			<ion-row>
 				<ion-col>
-					<ion-item lines="none" class="ion-no-padding">
-						<h1>Hello!</h1>
-					</ion-item>
+					<h1>Hello!</h1>
 				</ion-col>
 			</ion-row>
 			<ion-row>
 				<ion-col>
-					<ion-item lines="none" class="ion-no-padding">
-						<h6>Create an account to continue</h6>
-					</ion-item>
+					<h6>Create an account to continue</h6>
 				</ion-col>
 			</ion-row>
 			<ion-row>
@@ -87,7 +82,7 @@
 			<ion-row>
 				<ion-col>
 					<div class="ion-text-center">
-						<h6>Already have an account? Sign in</h6>
+						<h6>Already have an account? <span (click)="switchToLogin()">Sign in</span></h6>
 					</div>
 				</ion-col>
 			</ion-row>
