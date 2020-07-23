@@ -9,6 +9,53 @@
 					<h1>Welcome Back</h1>
 				</ion-col>
 			</ion-row>
+			<ion-row>
+				<ion-col>
+					<h6>Hello there, sign in to continue</h6>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col>
+					<ion-item class="ion-no-padding">
+						<ion-label position="floating">Email</ion-label>
+						<ion-input
+							type="email"
+							ngModel
+							name="email"
+							required
+							email></ion-input>
+					</ion-item>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col>
+					<ion-item class="ion-no-padding">
+						<ion-label position="floating">Password</ion-label>
+						<ion-input
+							type="password"
+							ngModel
+							name="password"
+							required></ion-input>
+					</ion-item>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col>
+					<ion-button expand="block">Sign in</ion-button>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col>
+					<ion-button expand="block" color="light" (click)="switchToSignup()">Create an account</ion-button>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col>
+					<div class="ion-text-center">
+						<h6>Forgot Password?</h6>
+					</div>
+				</ion-col>
+			</ion-row>
 		</ion-grid>
 	</form>
 </ion-content>
