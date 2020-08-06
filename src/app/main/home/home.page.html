@@ -5,4 +5,8 @@
 </ion-header>
 
 <ion-content>
+    <ion-backdrop
+        *ngIf="showAddMenu"
+        (click)="onClickBackdrop()">
+    </ion-backdrop>
 </ion-content>
