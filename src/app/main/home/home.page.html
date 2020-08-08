@@ -9,4 +9,14 @@
         *ngIf="showAddMenu"
         (click)="onClickBackdrop()">
     </ion-backdrop>
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed" *ngIf="showAddMenu">
+        <ion-row>
+            <ion-fab-button class="ion-margin-horizontal">
+                <ion-icon name="image-outline"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button>
+                <ion-icon name="folder-outline"></ion-icon>
+            </ion-fab-button>
+        </ion-row>
+    </ion-fab>
 </ion-content>
